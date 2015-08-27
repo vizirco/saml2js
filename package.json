@@ -1,6 +1,6 @@
 {
   "name": "saml2js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse SAML2 attributes into a JavaScript object.",
   "main": "index.js",
   "repository": {
@@ -35,6 +35,6 @@
     "time-grunt": "^1.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   }
 }
