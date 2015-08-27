@@ -1,4 +1,4 @@
-# saml2js
+# saml2js [![Build Status](https://travis-ci.org/Aplo/saml2js.svg?branch=master)](https://travis-ci.org/Aplo/saml2js)
 
 > Parses SAML responses into JS objects you can read and manipulate.
 
@@ -7,6 +7,8 @@
 ```
 $ npm install saml2js --save
 ```
+
+Saml2js supports Node.js 0.10+ and iojs.
 
 ## Usage
 
@@ -94,6 +96,18 @@ You don't need to worry about case sensitivity. Internally the Lodash `.camelCas
 #### `parse()`
 
 This is a private method. It is called internally when you pass your SAML to the constructor. You should never need to call this manually. See the source code if you want to know more about it.
+
+## Testing
+
+Testing requires Mocha and Chai.
+
+1. Clone the repository
+2. Run `npm install && npm install -g mocha`
+3. Finally, run `mocha`
+
+## Contributing
+
+When contributing, be sure to branch off of `develop` to get the latest changes. Contributions are welcome. Please try to write tests for your code so we can merge it in faster.
 
 ## Credit
 
