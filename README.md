@@ -39,7 +39,7 @@ var parser = new Saml2js(SAMLResponse);
 
 After passing your SAML response as a string to the constructor you now have access to the following methods.
 
-#### `asObject()`
+#### `toObject()`
 
 Returns the parsed SAML as a JavaScript object.
 
