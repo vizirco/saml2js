@@ -1,4 +1,4 @@
-# saml2js [![Build Status](https://travis-ci.org/Aplo/saml2js.svg)](https://travis-ci.org/Aplo/saml2js)
+# saml2js [![Build Status](https://travis-ci.org/Aplo/saml2js.svg?branch=master)](https://travis-ci.org/Aplo/saml2js)
 
 > Parses SAML responses into JS objects you can read and manipulate.
 
