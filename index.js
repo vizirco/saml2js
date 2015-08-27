@@ -45,8 +45,8 @@ Saml2js.prototype.parse = function(saml) {
 // --------------
 // Returns parsed SAML as a JSON string.
 // (Basically just an alias to `JSON.stringify()`).
-Saml2js.prototype.toJSON = function(obj) {
-  return JSON.stringify(obj);
+Saml2js.prototype.toJSON = function() {
+  return JSON.stringify(this.parsedSaml);
 };
 
 // Saml2js.get
@@ -63,7 +63,12 @@ Saml2js.prototype.toJSON = function(obj) {
 //     // </saml2:Attribute>
 //     console.log(parser.get('first name')); //=> John
 Saml2js.prototype.get = function(key) {
-  return this.parsedSaml[_.camelCase(key)];
+  var value = this.parsedSaml[_.camelCase(key.toLowerCase())];
+  if (_.isUndefined(value)) {
+    return undefined;
+  } else {
+    return _.isEmpty(value) ? null : value;
+  }
 };
 
 // Saml2js.toObject
