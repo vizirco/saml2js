@@ -8,6 +8,8 @@
 $ npm install saml2js --save
 ```
 
+Saml2js supports Node.js 0.10+ and iojs.
+
 ## Usage
 
 Saml2js was designed for use in any Node.js environment whether that's a web app or a standalone script.
