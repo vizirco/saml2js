@@ -1,23 +1,31 @@
 {
-  "name": "saml2json",
-  "version": "0.0.1",
-  "description": "Converts a SAML 2.0 response into a JSON object. Nothing more.",
+  "name": "saml2js",
+  "version": "0.1.0",
+  "description": "Parse SAML2 attributes into a JavaScript object.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/flesch/saml2json.git"
+    "url": "https://github.com/Aplo/saml2js.git"
   },
   "keywords": [
     "SAML",
+    "SAML2",
+    "parser",
     "authentication"
   ],
-  "author": "John Flesch <john@fles.ch>",
+  "author": "Bill Patrianakos <bill+opensource@aploquote.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/flesch/saml2json/issues"
+    "url": "https://github.com/Aplo/saml2js/issues"
   },
   "dependencies": {
-    "xmldom": "0.1.16",
+    "lodash": "^3.10.1",
+    "xmldom": "^0.1.16",
     "xpath": "0.0.5"
+  },
+  "homepage": "https://github.com/Aplo/saml2js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
