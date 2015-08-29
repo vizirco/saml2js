@@ -1,4 +1,4 @@
-# saml2js [![Build Status](https://travis-ci.org/Aplo/saml2js.svg?branch=master)](https://travis-ci.org/Aplo/saml2js)
+# saml2js [![npm version](https://badge.fury.io/js/saml2js.svg)](http://badge.fury.io/js/saml2js) [![Build Status](https://travis-ci.org/Aplo/saml2js.svg?branch=master)](https://travis-ci.org/Aplo/saml2js)
 
 > Parses SAML responses into JS objects you can read and manipulate.
 
@@ -9,6 +9,8 @@ $ npm install saml2js --save
 ```
 
 Saml2js supports Node.js 0.10+ and iojs.
+
+[![NPM](https://nodei.co/npm/saml2js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/saml2js/)
 
 ## Usage
 
