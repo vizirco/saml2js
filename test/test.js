@@ -31,6 +31,26 @@ describe('Saml2js', function() {
     });
   });
 
+  describe('#parse()', function() {
+    it('should parse base64 encoded SAML', function(done) {
+      fs.readFile(__dirname + '/base64.saml', {encoding: 'utf8'}, function(err, saml) {
+        if (err) done(err);
+        var base64parser = new Saml2js(saml);
+        expect(base64parser.toObject()).to.be.an('object');
+        done();
+      });
+    });
+
+    it('should contain the expected data', function(done) {
+      fs.readFile(__dirname + '/base64.saml', {encoding: 'utf8'}, function(err, saml) {
+        if (err) done(err);
+        var base64parser = new Saml2js(saml);
+        expect(base64parser.get('transfer type')).to.equal('Completed eligibility application');
+        done();
+      });
+    });
+  });
+
   describe('#toJSON()', function() {
     it('should return a string', function() {
       expect(parser.toJSON()).to.be.a('string');
