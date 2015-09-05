@@ -7,9 +7,7 @@
 var xmldom    = require('xmldom'),
     xpath     = require('xpath'),
     _         = require('lodash'),
-    profile   = {},
-    attributes;
-
+    profile   = {};
 
 // Saml2js
 // -------
@@ -31,7 +29,7 @@ Saml2js.prototype.parse = function(saml) {
   var xml       = new Buffer(saml, 'base64').toString('ascii'),
       doc       = new xmldom.DOMParser().parseFromString(xml);
 
-  attributes = xpath.select('//*[local-name() = "AttributeStatement"]/*', doc);
+  var attributes = xpath.select('//*[local-name() = "AttributeStatement"]/*', doc);
   attributes.forEach(function(attribute){
     var name = xpath.select('string(@Name)', attribute);    
     profile[_.camelCase(name)] = xpath.select('string(*[local-name() = "AttributeValue"]/text())', attribute);
