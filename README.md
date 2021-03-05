@@ -16,7 +16,7 @@ Saml2js supports Node.js 0.10+ and iojs.
 
 Saml2js was designed for use in any Node.js environment whether that's a web app or a standalone script.
 
-```
+```js
 var express = require('express')
     Saml2js = require('saml2js'),
     app     = express();
