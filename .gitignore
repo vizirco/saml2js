@@ -2,3 +2,4 @@
 .nvmrc
 node_modules/
 npm-debug.log
+.tool-versions

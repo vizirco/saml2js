@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "xmldom": "git://github.com/xmldom/xmldom#0.8.1",
+    "xmldom": "git://github.com/xmldom/xmldom#0.8.6",
     "xpath": "0.0.5"
   },
   "homepage": "https://github.com/Aplo/saml2js",
